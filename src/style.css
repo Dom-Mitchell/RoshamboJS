@@ -12,28 +12,107 @@
   /* Favicon Colors */
   --big-d: #00b7ff;
   --cessna: #5e5e5e;
-  --orange-sun: #F15A24;
-  --yellow-sun: #FCEE21;
+  --orange-sun: #f15a24;
+  --yellow-sun: #fcee21;
+  --cyan-ocean: #00BFE9;
+  --blue-ocean: #00217F;
   /* Custom Webpage Colors */
   --pale-green: #e1eedd;
   --mando-blue: #1857a4;
   --slate: #c8d8e4;
+  /* Auto Colors */
+  --beau-blue: #c8d8e4ff;
+  --honeydew: #e1eeddff;
+  --lapis-lazuli: #336699ff;
+  --charcoal: #2f4858ff;
+  --international-orange-aerospace: #fe5d26ff;
+  --amazon: #4a7c59ff;
+  --copper: #a8763eff;
+  --bdazzled-blue: #1857a4ff;
+  --byzantium: #7a3b69ff;
+  /* Custom Text Colors */
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
 }
+
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   /* min-height: 100%; */
   background-color: var(--pale-green);
 }
-footer {
+
+.main-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Rules Page CSS */
+.rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules div {
+  /* width: 100vw;
+  height: 90vh;
+  background-color: #f4e88d;
+  display: flex;
+  justify-content: center;
+  align-self: center; */
+  padding: 0;
+  margin: 0;
+}
+
+.rules a {
+  align-self: flex-end;
+}
+
+.close-rules {
+  width: 20px;
+
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes radiate-small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.close-rules:hover {
+  -webkit-animation: radiate-small 0.75s infinite;
+}
+
+.rule-image {
+  width: 80vw;
+  height: 80vh;
+  padding-top: 40px;
+}
+
+/* footer {
   text-align: center;
   padding: 3px 3px 0px 3px;
-  /* padding-top: 3px; */
-  /* padding-left: 3px; */
-  /* padding-right: 3px; */
-  /* padding-bottom: none; */
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: none;
   background-color: var(--slate);
   color: black;
   display: block;
@@ -41,6 +120,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  /* width: 100%; */
-  /* color: #fff; */
-}
+  width: 100%;
+  color: #fff;
+} */
