@@ -116,11 +116,31 @@ header p {
   }
 }
 
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 .logo:hover {
   /* animation: color-rotate 1s; */
-  text-shadow: 0 0 50px #0f0 0 0 100px #0f0 0 0 150px #0f0 0 0 200px #0f0 0 0
-    250px #0f0;
-  animation: glow 5s linear infinite;
+  /* text-shadow: 0 0 50px #0f0 0 0 100px #0f0 0 0 150px #0f0 0 0 200px #0f0 0 0
+    250px #0f0; */
+  /* animation: glow 5s linear infinite; */
+  /* animation: grow 1s; */
+  animation: rotateAnimation 3s linear infinite;
   /* animation-iteration-count: infinite;
   animation-direction: alternate; */
 }
@@ -369,6 +389,54 @@ main {
   }
 }
 
+/* .options button {
+  border-radius: 50px;
+  padding: 5px;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-span {
+  cursor: pointer;
+  position: absolute;
+  width: 143px;
+  height: 60px;
+  z-index: 1;
+  left: 0;
+  transition: 0.2s linear;
+} */
+
+/* .options p {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  z-index: 2;
+}
+
+.options:hover p {
+  color: white;
+}
+
+.options:nth-child(1) span {
+  transform: translateY(60px);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: rgb(235, 72, 23);
+}
+
+.options:nth-child(1):hover span {
+  transform: translateY(-10px);
+  border-radius: 50px;
+} */
+
 .winner-btn {
   border-radius: 50px;
   padding: 5px;
@@ -377,11 +445,36 @@ main {
   margin-right: 5px;
   position: relative;
   overflow: hidden;
-  display: hidden;
   animation: bounce 0.75s infinite;
 }
 
-.winner {
+.home-span {
+  cursor: pointer;
+  position: absolute;
+  width: 600px;
+  height: 60px;
+  z-index: 1;
+  left: 0;
+  transition: 0.2s linear;
+}
+
+.winner-btn span {
+  transform: translateX(400px) translateY(-10px);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background: rgb(23, 133, 235);
+}
+
+.winner-btn:hover span {
+  transform: translateY(-10px);
+  border-radius: 50px;
+}
+
+.winner-btn:hover p {
+  color: white;
+}
+
+.winner-text {
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -392,10 +485,6 @@ main {
   padding-right: 10px;
   margin: 0;
   z-index: 2;
-}
-
-.winner:hover {
-  color: white;
 }
 
 /* Rules Page CSS */
