@@ -16,4 +16,4 @@ The above is a custom favicon that I made for the template, to be used in all fu
 
 A link to the webpage that I made can be found in the About section of this repository or below.
 
-https://html-css-template-dommitchell.netlify.app/
+https://roshambo-js-dommitchell.netlify.app/

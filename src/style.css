@@ -14,8 +14,8 @@
   --cessna: #5e5e5e;
   --orange-sun: #f15a24;
   --yellow-sun: #fcee21;
-  --cyan-ocean: #00BFE9;
-  --blue-ocean: #00217F;
+  --cyan-ocean: #00bfe9;
+  --blue-ocean: #00217f;
   /* Custom Webpage Colors */
   --pale-green: #e1eedd;
   --mando-blue: #1857a4;
@@ -45,13 +45,357 @@ html {
 
 body {
   margin: 0;
-  /* min-height: 100%; */
-  background-color: var(--pale-green);
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--amazon);
 }
 
-.main-menu a {
+.first-player {
+  background-color: var(--night-sky);
+}
+
+.second-player {
+  background-color: var(--bdazzled-blue);
+}
+
+/* Landing Page */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+  background: var(--charcoal);
+  color: white;
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+}
+
+header img {
+  height: 200px;
+  width: auto;
+}
+
+header div {
+  height: auto;
+  width: 300px;
+  border-bottom: var(--copper) 5px solid;
+}
+
+header h1 {
+  /* border-bottom: 2px solid red; */
+  width: auto;
+  padding-top: 20px;
+  margin: 0;
+}
+
+header p {
+  font-size: x-large;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.logo:hover {
+  /* animation: color-rotate 1s; */
+  text-shadow: 0 0 50px #0f0 0 0 100px #0f0 0 0 150px #0f0 0 0 200px #0f0 0 0
+    250px #0f0;
+  animation: glow 5s linear infinite;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+main {
+  justify-content: center;
+  text-align: center;
+}
+
+.options button {
+  border-radius: 50px;
+  padding: 5px;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-span {
+  cursor: pointer;
+  position: absolute;
+  width: 143px;
+  height: 60px;
+  z-index: 1;
+  left: 0;
+  transition: 0.2s linear;
+}
+
+.rules-span {
+  cursor: pointer;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  z-index: 1;
+  left: 0;
+  transition: 0.2s linear;
+}
+
+.options p {
+  cursor: pointer;
+  position: relative;
   text-decoration: none;
   color: black;
+  font-size: 40px;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  z-index: 2;
+}
+
+.options:hover p {
+  color: white;
+}
+
+.options:nth-child(1) span {
+  transform: translateY(60px);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: rgb(235, 72, 23);
+  /* transform: translateY(-20px);
+  border-radius: 10px; */
+}
+
+.options:nth-child(1):hover span {
+  transform: translateY(-10px);
+  border-radius: 50px;
+  /* overflow: hidden; */
+}
+
+.options:nth-child(2) span {
+  transform: translateY(-115px);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: rgb(236, 31, 117);
+  /* transform: translateY(-20px);
+  border-radius: 10px; */
+}
+
+.options:nth-child(2):hover span {
+  transform: translateY(-10px);
+  border-radius: 50px;
+  /* overflow: hidden; */
+}
+
+/* Player Choices Css */
+.choices {
+  background-color: #ffffff00;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.choices a {
+  text-decoration: none;
+  color: black;
+}
+
+.choices svg {
+  height: 100px;
+  width: 100px;
+  filter: grayscale(100%) opacity(0.7);
+}
+
+.choices:hover svg,
+.choices:hover span {
+  filter: grayscale(0%) opacity(1);
+  color: white;
+}
+
+.player-one:focus svg,
+.player-two:focus svg {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Player One CSS */
+.player-one-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: max-content; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.player-one-page a {
+  align-self: flex-end;
+}
+
+.close-game {
+  width: 20px;
+
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.close-game:hover {
+  animation: radiate-small 0.75s infinite;
+  fill: white;
+}
+
+.p1 {
+  /* margin-top: auto; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-content: center; */
+  flex-direction: column;
+}
+
+.p1 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.p1 h1:hover {
+  color: white;
+}
+
+.p1 div {
+  display: flex;
+}
+
+/* Player Two Page */
+.player-two-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: max-content; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.player-two-page a {
+  align-self: flex-end;
+}
+
+.close-game {
+  width: 20px;
+
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.close-game:hover {
+  animation: radiate-small 0.75s infinite;
+  fill: white;
+}
+
+.p2 {
+  /* margin-top: auto; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-content: center; */
+  flex-direction: column;
+}
+
+.p2 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.p2 h1:hover {
+  color: white;
+}
+
+.p2 div {
+  display: flex;
+}
+
+/* Winner Page CSS */
+
+.results-page {
+  padding: 0;
+  padding-bottom: 3.5em;
+}
+
+.results-page a {
+  align-self: flex-end;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px);
+  }
+  75% {
+    transform: scale(1, 1) translate(0px, -5px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.winner-btn {
+  border-radius: 50px;
+  padding: 5px;
+  letter-spacing: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  overflow: hidden;
+  display: hidden;
+  animation: bounce 0.75s infinite;
+}
+
+.winner {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  z-index: 2;
+}
+
+.winner:hover {
+  color: white;
 }
 
 /* Rules Page CSS */
@@ -59,17 +403,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.rules div {
-  /* width: 100vw;
-  height: 90vh;
-  background-color: #f4e88d;
-  display: flex;
-  justify-content: center;
-  align-self: center; */
-  padding: 0;
-  margin: 0;
 }
 
 .rules a {
@@ -84,12 +417,12 @@ body {
   cursor: pointer;
 }
 
-@-webkit-keyframes radiate-small {
+@keyframes radiate-small {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
   100% {
     transform: scale(1);
@@ -97,7 +430,8 @@ body {
 }
 
 .close-rules:hover {
-  -webkit-animation: radiate-small 0.75s infinite;
+  animation: radiate-small 0.75s infinite;
+  fill: white;
 }
 
 .rule-image {
