@@ -12,9 +12,9 @@ The above is a diagram of the rules from Wikipedia of the classic game RPS.
 
 The RPS game that I have created added a spin to the classic version which has been used in the show, The Big Bang Theory.
 
-![image of My webpage](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png)
+![image of RPScLSp](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png)
 
-The above is a diagram of the rules from Wikipedia of the classic game RPS.
+The above is a diagram of the rules from Wikipedia of the RPScLSp, rock, paper, scissors, lizard, and spock version of RPS.
 
 <br/>
 
