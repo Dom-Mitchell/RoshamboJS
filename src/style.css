@@ -86,7 +86,6 @@ header div {
 }
 
 header h1 {
-  /* border-bottom: 2px solid red; */
   width: auto;
   padding-top: 20px;
   margin: 0;
@@ -96,33 +95,6 @@ header p {
   font-size: x-large;
   padding-bottom: 0;
   margin-bottom: 0;
-}
-
-@keyframes glow {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes color-rotate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(2);
-  }
 }
 
 @keyframes rotateAnimation {
@@ -135,14 +107,7 @@ header p {
 }
 
 .logo:hover {
-  /* animation: color-rotate 1s; */
-  /* text-shadow: 0 0 50px #0f0 0 0 100px #0f0 0 0 150px #0f0 0 0 200px #0f0 0 0
-    250px #0f0; */
-  /* animation: glow 5s linear infinite; */
-  /* animation: grow 1s; */
   animation: rotateAnimation 3s linear infinite;
-  /* animation-iteration-count: infinite;
-  animation-direction: alternate; */
 }
 
 main {
@@ -186,7 +151,6 @@ main {
   text-decoration: none;
   color: black;
   font-size: 40px;
-  /* padding: 10px; */
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
@@ -202,14 +166,11 @@ main {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background: rgb(235, 72, 23);
-  /* transform: translateY(-20px);
-  border-radius: 10px; */
 }
 
 .options:nth-child(1):hover span {
   transform: translateY(-10px);
   border-radius: 50px;
-  /* overflow: hidden; */
 }
 
 .options:nth-child(2) span {
@@ -217,14 +178,11 @@ main {
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   background: rgb(236, 31, 117);
-  /* transform: translateY(-20px);
-  border-radius: 10px; */
 }
 
 .options:nth-child(2):hover span {
   transform: translateY(-10px);
   border-radius: 50px;
-  /* overflow: hidden; */
 }
 
 /* Player Choices Css */
@@ -266,7 +224,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-height: max-content; */
   height: 100vh;
   overflow: hidden;
 }
@@ -289,13 +246,11 @@ main {
 }
 
 .p1 {
-  /* margin-top: auto; */
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   display: flex;
-  /* align-content: center; */
   flex-direction: column;
 }
 
@@ -317,7 +272,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-height: max-content; */
   height: 100vh;
   overflow: hidden;
 }
@@ -340,13 +294,11 @@ main {
 }
 
 .p2 {
-  /* margin-top: auto; */
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   display: flex;
-  /* align-content: center; */
   flex-direction: column;
 }
 
@@ -364,7 +316,6 @@ main {
 }
 
 /* Winner Page CSS */
-
 .results-page {
   padding: 0;
   padding-bottom: 3.5em;
@@ -388,54 +339,6 @@ main {
     transform: scale(1, 1) translate(0px, 0px);
   }
 }
-
-/* .options button {
-  border-radius: 50px;
-  padding: 5px;
-  letter-spacing: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.start-span {
-  cursor: pointer;
-  position: absolute;
-  width: 143px;
-  height: 60px;
-  z-index: 1;
-  left: 0;
-  transition: 0.2s linear;
-} */
-
-/* .options p {
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0;
-  z-index: 2;
-}
-
-.options:hover p {
-  color: white;
-}
-
-.options:nth-child(1) span {
-  transform: translateY(60px);
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  background: rgb(235, 72, 23);
-}
-
-.options:nth-child(1):hover span {
-  transform: translateY(-10px);
-  border-radius: 50px;
-} */
 
 .winner-btn {
   border-radius: 50px;
@@ -480,7 +383,6 @@ main {
   text-decoration: none;
   color: black;
   font-size: 40px;
-  /* padding: 10px; */
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
@@ -528,21 +430,3 @@ main {
   height: 80vh;
   padding-top: 40px;
 }
-
-/* footer {
-  text-align: center;
-  padding: 3px 3px 0px 3px;
-  padding-top: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-bottom: none;
-  background-color: var(--slate);
-  color: black;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  color: #fff;
-} */
