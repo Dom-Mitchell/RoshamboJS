@@ -1,16 +1,20 @@
-# html-css-ts-project-template
+# RoshamboJS
 
 ## Assignment
 
-The goal of this assignment was to create a basic webpage to act as a template for all future html projects.
+The goal of this assignment was to create a basic recreation of the classic game RPS, rock, paper, and scissors.
 
-![image of My webpage](././images/mypage.png)
+![image of RPS](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/220px-Rock-paper-scissors.svg.png)
 
-The above is a screen capture of the template that I created.
+The above is a diagram of the rules from Wikipedia of the classic game RPS.
 
-![image of My webpage](././icons/current/dai5.svg)
+<br/>
 
-The above is a custom favicon that I made for the template, to be used in all future html projects.
+The RPS game that I have created added a spin to the classic version which has been used in the show, The Big Bang Theory.
+
+![image of My webpage](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png)
+
+The above is a diagram of the rules from Wikipedia of the classic game RPS.
 
 <br/>
 
