@@ -18,6 +18,8 @@ The above is a diagram of the rules from Wikipedia of the RPScLSp, rock, paper, 
 
 <br/>
 
-A link to the webpage that I made can be found in the About section of this repository or below.
+A link to the webpage that I made can be found in the **About** section of this repository or below.
 
+```html
 https://roshambo-js-dommitchell.netlify.app/
+```
